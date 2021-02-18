@@ -14,7 +14,6 @@ public class User {
 
     private String username;
     private String password;
-    private String salt;
 
     private String firstname;
     private String lastname;
@@ -41,14 +40,6 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getSalt() {
-        return salt;
-    }
-
-    public void setSalt(String salt) {
-        this.salt = salt;
     }
 
     public String getFirstname() {
