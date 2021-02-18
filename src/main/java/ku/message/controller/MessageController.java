@@ -28,7 +28,7 @@ public class MessageController {
         return "post";
     }
 
-    @PostMapping("/post")
+    @PostMapping("/message")
     public String postMessage(@ModelAttribute Message message, Model model) {
         repository.save(message);
         model.addAttribute("messages", repository.findAll());
